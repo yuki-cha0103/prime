@@ -58,6 +58,7 @@ function mousePressed(){
   timemove = false
   inp = 0
   qua = 0
+  stage = 0
   
 if(adj == 0){
   windowResized()
@@ -150,7 +151,7 @@ function gamephone(){//phonemode
 function end(){
   background(255)
   timemove = false
-  textall("クリア\nおめでとう\n" + times/60 + "秒",winx*0.02,winx/2,winy/2,CENTER,0)
+  textall("クリア\nおめでとう\n" + ((floor(times / 60 * 100))/100) + "秒",winx*0.02,winx/2,winy/2,CENTER,0)
 }
 
 function inputs(num){
